@@ -1,0 +1,19 @@
+#IMAGEM BASE PYTHON
+FROM python:3.10
+
+#CRIANDO DIRETORIO DE TRABALHO
+WORKDIR /app
+
+#COPIANDO ARQUIVO DE DEPENDENCIAS
+COPY main.py .
+COPY requirements.txt .
+COPY termos.json .
+
+#INSTALANDO DEPENDENCIAS
+RUN pip install -r requirements.txt
+
+#PORTA QUE RODA A API
+EXPOSE 5000
+
+#COMANDO PARA RODAR A API
+CMD ["python", "main.py"]
