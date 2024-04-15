@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questão 3</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container-verde {
+        position: relative;
+        width: 1000px;
+        margin: 20px auto 0;
+        background-color: #f0f0f0;
+    }
+    .div-verde {
+        height: 200px;
+        width: 1000px;
+        background-color: green;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .container-vermelho {
+        position: absolute;
+        top: 240px;
+        width: calc(100% - 10px); /* largura ajustada */
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px; /* adicionado padding para manter a distância das laterais */
+    }
+    .div-vermelha {
+        height: 330px;
+        width: 190px; /* largura ajustada */
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<div class="container-verde">
+    <div class="div-verde">Div1</div>
+    <div class="container-vermelho">
+        <div class="div-vermelha">Div2</div>
+        <div class="div-vermelha">Div3</div>
+        <div class="div-vermelha">Div4</div>
+        <div class="div-vermelha">Div5</div>
+    </div>
+</div>
+
+</body>
+</html>
